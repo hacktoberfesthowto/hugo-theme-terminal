@@ -1,0 +1,40 @@
+.accordion-title {
+  $border: 3px dotted $accent;
+  position: relative;
+  color: $accent;
+  margin: 0 0 20px;
+  padding-bottom: 20px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    display: block;
+    width: 100%;
+    border-bottom: $border;
+  }
+
+  > ::marker {
+    position: absolute;
+  }
+
+  > h2 {
+    position: absolute;
+    margin: 0;
+    left: 25px;
+    top: -20px;
+  }
+}
+
+.accordion-content {
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.accordion {
+  margin: 20px 0;
+}
+
+.headings--one-size h2:not(first-child) {
+  margin-top: 20px;
+}
